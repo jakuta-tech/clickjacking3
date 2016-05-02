@@ -15,7 +15,7 @@
 		    setInterval(function() {  
 		    	if (prevent_bust > 0) {  
 		    		prevent_bust -= 2  
-		    		window.top.location = "http://students.washington.edu/sangkim1/info415/INFO415_ClickJacking3/"  
+		    		window.top.location = "localhost:8009"  
 		     	};
 		    });
 		</script>
@@ -23,23 +23,22 @@
 	
 	<body>
 		<div class="container">
-			<div class="jumbotron">
+			<div class="jumbotron" style="height:230px; padding-top: 10px">
             	<h2 style="text-align: center">Spot The Difference Challenge Level 3!</h2>
             	<h5 style="text-align: center"><br>Find the <b>Different DB Friend</b> from the bingo!<br>The unique DB friend will take you to the <b>Event Page</b> for your winning prize! Good Luck!</h5>
             	<h4 style="padding-left: 100px; display:inline-block;">Sponsored by: &nbsp;&nbsp;&nbsp;&nbsp;</h4><img src="img/fb.png" /><img src="img/amazon.png" /><img src="img/boeing.png" /><h4 style="display:inline-block;">&nbsp;&nbsp;&nbsp;</h4><img src="img/ischool.png" />
             </div>
 
-	        <div id="cj" style="z-index:2; position:absolute; top:26.5em; left:310px; width: 500px; height:500px"> 
-				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 500px" scrolling="no" width="500px" height="300px" /> 
+	        <div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
+				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 200px" scrolling="no" width="500px" height="200px" /> 
 				</iframe> 
 	        </div> 
 
-	        <div style="position:absolute; top:24em; left:350px; z-index:1; width: 600px; height:500px; text-align:center;"> 
+	        <div style="position:absolute; top:19em; left:350px; z-index:1; width: 600px; height:400px; text-align:center;"> 
 	            <img style="width: 500px; height: 400px" src="img/Q3.jpg">
 	        </div>
 
 		</div> 
-
-
 	</body>
+	
 </html>
