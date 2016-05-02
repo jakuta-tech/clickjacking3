@@ -10,19 +10,18 @@
 		<link href="css/main.css" type="text/css" />
 		<title>Safe browser 3</title>
 	</head>
-	<!--
-	<script type="text/javascript">
+		<script type="text/javascript">
 	    var prevent_bust = 0  
 	    window.onbeforeunload = function() { prevent_bust++ }  
 	    setInterval(function() {  
 	    	if (prevent_bust > 0) {  
 	    		prevent_bust -= 2  
-	    		window.top.location = "localhost:8080"  
+	    		//window.top.location = "localhost:8080"
 	    		window.top.location = "http://students.washington.edu/sangkim1/info415/INFO415_ClickJacking3"  
 	     	};
 	    }, 1);
 	</script>
--->
+
 	<body>
 		<div class="container">
 			<div class="jumbotron" style="height:230px; padding-top: 10px">
@@ -31,11 +30,16 @@
             	<h4 style="padding-left: 100px; display:inline-block;">Sponsored by: &nbsp;&nbsp;&nbsp;&nbsp;</h4><img src="img/fb.png" /><img src="img/amazon.png" /><img src="img/boeing.png" /><h4 style="display:inline-block;">&nbsp;&nbsp;&nbsp;</h4><img src="img/ischool.png" />
             </div>
 
-	        <div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
+			<div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
+				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 200px" scrolling="no" frameborder="none" idth="500px" height="200px"> 
+				</iframe>
+	        </div> 
+
+	        <!-- <div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
 				<iframe src="http://students.washington.edu/sangkim1/info415/INFO415_ClickJacking3">
 				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 200px" scrolling="no" frameborder="none" idth="500px" height="200px"> 
 				</iframe></iframe>
-	        </div> 
+	        </div>  -->
 
 	        <div style="position:absolute; top:19em; left:350px; z-index:1; width: 600px; height:400px; text-align:center;"> 
 	            <img style="width: 500px; height: 400px" src="img/Q3.jpg">
