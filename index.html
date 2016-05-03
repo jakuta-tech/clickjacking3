@@ -28,22 +28,19 @@
             	<h5 style="text-align: center"><br>Find the <b>Different DB Friend</b> from the bingo!<br>The unique DB friend will take you to the <b>Event Page</b> for your winning prize! Good Luck!</h5>
             	<h4 style="padding-left: 100px; display:inline-block;">Sponsored by: &nbsp;&nbsp;&nbsp;&nbsp;</h4><img src="img/fb.png" /><img src="img/amazon.png" /><img src="img/boeing.png" /><h4 style="display:inline-block;">&nbsp;&nbsp;&nbsp;</h4><img src="img/ischool.png" />
             </div>
+
+            <!-- script for allowing clickjacking -->
             <script>
 				window.onbeforeunload = function()
 				{
-				  return "STAY HERE! you will lose all of your records for winning prize!";
+				  return "WARNING! You will lose all the records for winning prize if you leave the page! (recommended: Stay on this Page)";
 				}
 			</script>
+
 			<div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
-				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 200px" scrolling="no" frameborder="none" idth="500px" height="200px"> 
+				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.0;filter:alpha(opacity=40); height: 200px" scrolling="no" frameborder="none" idth="500px" height="200px"> 
 				</iframe>
 	        </div> 
-
-	        <!-- <div id="cj" style="z-index:2; position:absolute; top:21.5em; left:310px; width: 500px; height:200px"> 
-				<iframe src="http://students.washington.edu/sangkim1/info415/INFO415_ClickJacking3">
-				<iframe src="http://clickjacking-challenges.r7.io/level/3?name=sangkim1" style="opacity:0.5;filter:alpha(opacity=40); height: 200px" scrolling="no" frameborder="none" idth="500px" height="200px"> 
-				</iframe></iframe>
-	        </div>  -->
 
 	        <div style="position:absolute; top:19em; left:350px; z-index:1; width: 600px; height:400px; text-align:center;"> 
 	            <img style="width: 500px; height: 400px" src="img/Q3.jpg">
